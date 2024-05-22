@@ -22,7 +22,7 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link @if($currentRoute != '/admin/student') collapsed @endif" href="/admin/Courses">
+        <a class="nav-link @if($currentRoute != '/admin/student') collapsed @endif" href="/admin/course">
           <i class="bi bi-book"></i>
           <span>Courses</span>
         </a>
