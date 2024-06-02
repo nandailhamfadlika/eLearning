@@ -19,3 +19,18 @@ Route::get('/', function () {
 Route::get('admin/dashboard', [DashboardController::class, 'index']);
 Route::get('admin/student', [StudentController::class, 'index']);
 Route::get('admin/course', [CoursesController::class, 'index']);
+
+// route menampilkan form tambah student
+Route::get('admin/student/create' , [StudentController::class, 'create']);
+
+// route untuk mengirim data form tambah student
+Route::post('admin/student/create', [StudentController::class, 'store']);
+
+// rounte untuk menampilkan halaman edit
+Route::get('admin/student/edit/{id}', [StudentController::class, 'edit'])->name('student.edit');
+
+// route menyimpan hasil update
+Route::put('/admin/student/update/{id}', [StudentController::class, 'update']);
+
+// route delete student
+Route::delete('/admin/student/delete/{id}', [StudentController::class, 'destroy']);
