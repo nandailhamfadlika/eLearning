@@ -27,7 +27,7 @@
 
                 
                 <div class="mb-2">
-                    <label for="major" class="form-label">Category</label>
+                    <label for="category" class="form-label">Category</label>
                     <select name="category" id="category" class="form-select">
                         <option value="">Pilih kategori</option>
                         <option value="Pemrograman">Pemrograman</option>

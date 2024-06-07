@@ -14,6 +14,10 @@ class Student extends Model
     // definisikan form yang boleh diisi / diinput ke db
     
     protected $fillable = [
-        'name','nim','major','class'
+        'name','nim','major','class','course_id'
+
     ];
+    public function course(){
+        return $this->belongsTo(Course::class);
+    }
 }
